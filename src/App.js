@@ -12,14 +12,14 @@ import './App.css'
 
 const App = () => {
   const { activeMenu, themeSettings, setThemeSettings, currentColor, currentMode } = useStateContext()
-
+  console.log(window.matchMedia("(prefers-color-scheme: dark)").matches)
   return (
     <div className={currentMode === 'Dark' ? 'dark' : ''}>
       <BrowserRouter>
         <div className="flex relative dark:bg-main-dark-bg">
           <div className="fixed right-4 bottom-4" style={{ xIndex: '1000'}}>
             <TooltipComponent content="Settings" position="Top">
-              <button type="button" onClick={() => setThemeSettings(true)} className="text-3xl p-3 hover:drop-shadow-x1 hover:bg-light-gray text-white" style={ { background: currentColor, borderRadius: '50%'}}>
+              <button type="button" onClick={() => setThemeSettings(true)} className="text-3xl p-3 hover:drop-shadow-x1 hover:bg-light-gray text-white" style={ { background: currentColor, borderRadius: '50%', zIndex: '11000'}}>
                 <FiSettings />
               </button>
             </TooltipComponent>

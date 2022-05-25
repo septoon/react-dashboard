@@ -53,7 +53,7 @@ const Ecommerce = () => {
               <div className="flex items-center gap-4">
                 <p className="flex items-center gap-2 text-gray-600 hover:drop-shadow-xl">
                   <span><GoPrimitiveDot /></span>
-                  <span>Expense</span>
+                  <span className=" dark:text-white">Expense</span>
                 </p>
                 <p className="flex items-center gap-2 text-green-400 hover:drop-shadow-xl">
                   <span><GoPrimitiveDot /></span>
