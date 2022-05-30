@@ -12,7 +12,7 @@ import './App.css'
 
 const App = () => {
   const { activeMenu, themeSettings, setThemeSettings, currentColor, currentMode } = useStateContext()
-  console.log(window.matchMedia("(prefers-color-scheme: dark)").matches)
+
   return (
     <div className={currentMode === 'Dark' ? 'dark' : ''}>
       <BrowserRouter>
