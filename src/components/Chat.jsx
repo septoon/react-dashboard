@@ -2,8 +2,8 @@ import React from 'react'
 
 const Chat = () => {
   return (
-    <div >
-      
+    <div className="relative w:xs h:xs" >
+      chat
     </div>
   )
 }

@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, HashRouter, Route } from 'react-router-dom'
 import { FiSettings } from 'react-icons/fi'
 import { TooltipComponent } from '@syncfusion/ej2-react-popups'
 
@@ -43,7 +43,7 @@ const App = () => {
             <div className="w-full">
               {themeSettings && <ThemeSettings />}
 
-              <Routes>
+              <HashRouter>
                 {/* Dashboard */}
                 <Route path="/" element={<Ecommerce />} />
                 <Route path="/ecommerce" element={<Ecommerce />} />
@@ -68,7 +68,7 @@ const App = () => {
                 <Route path="/color-mapping" element={<ColorMapping />} />
                 <Route path="/pyramid" element={<Pyramid />} />
                 <Route path="/stacked" element={<Stacked />} />
-              </Routes>
+              </HashRouter>
             </div>
 
           </div>
